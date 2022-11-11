@@ -71,7 +71,7 @@
         <section class="hero overlay">
           <div class="container">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="button-hero btn">
+            <button type="button" class="button-hero btn" data-modal-open>
               Замовити послугу
             </button>
           </div>
@@ -138,26 +138,29 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list our-works-list">
-            <li class="item">
+            <li class="item our-works-item">
               <img
                 src="./images/box_1.jpg"
                 alt="Десктопні додатки"
                 width="370"
               />
+              <h3 class="our-works-label">Десктопні додатки</h3>
             </li>
-            <li class="item">
+            <li class="item our-works-item">
               <img
                 src="./images/box_2.jpg"
                 alt="Мобільні додатки"
                 width="370"
               />
+              <h3 class="our-works-label">Мобільні додатки</h3>
             </li>
-            <li class="item">
+            <li class="item our-works-item">
               <img
                 src="./images/box_3.jpg"
                 alt="Дизайнерські рішення"
                 width="370"
               />
+              <h3 class="our-works-label">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -569,5 +572,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg>
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
